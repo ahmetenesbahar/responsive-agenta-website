@@ -14,7 +14,7 @@ body{
 }
 .main-header{
     background-color: #ffebbb;
-    padding: 16px 32px;
+    padding: 1.6em 3.2em;
     position: absolute;
     width: 100%;
     top: 0;
@@ -29,24 +29,24 @@ body{
 
 .main-nav-items{
     margin: 0;
-    padding: 0 100px;
+    padding: 0 1em;
     list-style: none;
 }
 
 .main-nav-item{
     display: inline-block;
-    margin: 20px 5px;
-    padding-left: 100px;
-    font-size: 18px;
+    margin: 0.2em 0.5em;
+    padding-left: 5em;
+    font-size: 1.5em;
     color: #38598b;
 }
 
 .main-header-logo{
-    margin-left: 200px;
+    margin-left: 2em;
     color: #a2a8d3;
     text-decoration: none;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 3.5em;
 }
 
 .main-nav-item a{
@@ -57,21 +57,21 @@ body{
 .dropdown{
     position: relative;
     display: inline-block;
-    border-radius: 20px;
+    border-radius: 2em;
 }
 
 .dropdown-content{
     display: none;
     position: absolute;
     background-color: #ffebbb ;
-    max-width: 120px;
+    max-width: 12em;
     z-index: 1;
-    border-radius: 20px;
+    border-radius: 2em;
 }
 
 .dropdown-content a{
     color:#38598b;
-    padding: 10px;
+    padding: 1em;
     text-decoration: none;
     display: block;
     border-radius: 20px;
@@ -84,3 +84,60 @@ body{
 
 .dropdown:hover .dropdown-content{display: block;}
 
+ /* Small devices (landscape phones, 576px and up) */
+@media (max-width: 576px) { 
+ html{
+ font-size: 65%;
+ }
+ .main-nav-items{
+    font-size: 1em;
+}
+.main-nav-item{
+    padding-left: 0.1em;
+}
+.main-header-logo{
+    font-size: 2em;
+}
+}
+
+ /* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) { 
+html{
+    font-size: 68%;
+}
+.main-header-logo{
+    font-size: 2em;
+}
+.main-nav-items{
+    font-size: 0.7em;
+}
+.main-nav-item{
+    padding-left: 0.09em;
+    margin: 0.2em 0em;
+}
+ }
+
+ /* Large devices (desktops, 992px and up) */
+@media (max-width: 992px) { 
+html{
+    font-size: 72%;
+}
+
+}
+
+
+ /* X-Large devices (large desktops, 1200px and up) */
+@media (max-width: 1200px) { 
+html{
+    font-size: 78%;
+}
+
+ }
+
+ /* XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1400px) { 
+html{
+    font-size: 80%;
+}
+
+ }
