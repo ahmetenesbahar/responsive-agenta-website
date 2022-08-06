@@ -4,32 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Page Deneme_1</title>
+    <title>Satuhaz's Agendas</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header class="main-header">
-        <a  class="main-header-logo" href="#" target="_self">Deneme.com</a>
-        <nav class="main-nav">
-            <ul class="main-nav-items">
-                <li class="main-nav-item"><a href="">Ana Sayfa</a></li>
-                <li class="main-nav-item"><a href="">Ürünlerimiz</a></li>
-                <li class="main-nav-item">
-                    <div class="dropdown">
-                        <a href="">Hakkımızda</a>
-                        <div class="dropdown-content">
-                            <a href="">Deneme.com Nedir?</a>
-                            <a href="">Deneme.com Nasıl Çalışır</a>
-                            <a href="">Deneme.com Blog</a>
-                        </div>
-                </div>
-            </li>
-                <li class="main-nav-item"><a href="">İletişim</a></li>
+   <div class="continer">
+    <div class="navbar">
+        <img src="AgendaLogo.png" class="logo"></img>
+        <nav>
+            <ul id="menuList">
+                <li><a href="#">Agendas</a></li>
+                <li><a href="#">Info</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Help</a></li>
             </ul>
         </nav>
-    </header>
+        <img src="menu.png" alt="" class="menu-icon" onclick="togglemenu()">
+    </div>
+    <div class="row-1">
+        <div class="col-1-1">
+            <h2>Satuhaz's Agendas</h2><br>
+            <h3>This Special Agenda Will Make Your Life Pretty</h3>
+            <p>
+                <h4>10$</h4>
+                <button class="btn">Add to Cart <img src="MarketCart.png" alt="" class="btn-img"></button>
+            </p>
+        </div>
+        <div class="col-1-2">
+            <img src="AjandaKapak.webp" alt="" class="ajanda-ön-kapak">
+            <div class="color-box-1"></div>
+        </div>
+    </div>
+    <div class="row-2">
+        <div class="col-r2-1">
 
+        </div>
+        <div class="col-r2-2">
+
+        </div>
+
+    </div>
+
+    <div class="row-3">
+        <div class="col-r3-1">
+
+        </div>
+        <div class="col-r3-2">
+
+        </div>
+    </div>
+    <div class="social-links">
+        <ul>
+            <li style="--clr:#1da1f2"><i class="fa-brands fa-twitter" aria-hidden="true"></i></li>
+            <li style="--clr:#dd2a7b"><i class="fa-brands fa-instagram" aria-hidden="true"></i></li>
+            <li style="--clr:#25d366"><i class="fa-brands fa-whatsapp" aria-hidden="true"></i></li>
+        </ul>
+    </div>
     
+   </div>
+
+   
+
+<script>
+    var menuList=document.getElementById("menuList")
+        menuList.style.maxHeight="0px";
+        function togglemenu(){
+            if(menuList.style.maxHeight=="0px")
+            {
+            menuList.style.maxHeight="130px";
+        }
+        else{
+            menuList.style.maxHeight="0px";
+        }
+    }
+
+</script>
 </body>
 </html>
