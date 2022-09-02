@@ -1,262 +1,264 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto', sans-serif;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
-html{
-    scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-body{
-    background-color: wheat;
+body {
+  background-color: wheat;
 }
-.container{
-    width: 100%;
-    min-height: 100vh;
-    padding-left: 8%;
-    padding-right: 8%;
-    box-sizing: border-box;
-    overflow: hidden;
-}
-
-.navbar{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    background-color:#bae8e8;
-    box-shadow: 0px 9px 5px 0px rgba(0,0,0,0.2);
+.container {
+  width: 100%;
+  min-height: 100vh;
+  padding-left: 8%;
+  padding-right: 8%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
-.logo{
-    width: 70px;
-    cursor: pointer;
-    margin: 20px 0 20px 40px;
+.navbar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #bae8e8 !important;
+  box-shadow: 0px 9px 5px 0px rgba(0, 0, 0, 0.2);
 }
-.menu-icon{
-    position:absolute;
-    right:10px;
-    width: 25px;
-    cursor: pointer;
-    display: none;
+.dropdown-menu {
+  background-color: #bae8e8 !important;
 }
-
-nav{
-    flex: 1;
-    text-align: right;
-    margin-right:300px ;
+.dropdown-item:hover {
+  background-color: #bae8e8 !important;
 }
 
-nav ul li{
-    font-weight: bold;
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px 0 20px;
+.logo {
+  width: 70px;
+  cursor: pointer;
+  margin: 20px 0 20px 40px;
+}
+.menu-icon {
+  position: absolute;
+  right: 10px;
+  width: 25px;
+  cursor: pointer;
+  display: none;
 }
 
-nav ul li a{
-    text-decoration: none;
-    color: #9896f1;
-    font-size: 20px;
-}
-nav ul li a:hover{
-    color: #7c73e6;
+nav {
+  flex: 1;
+  text-align: right;
+  margin-right: 300px;
 }
 
-.row-1{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+nav ul li {
+  font-weight: bold;
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px 0 20px;
 }
 
-.col-1-1{
-    flex-basis: 40%;
-    position: relative;
-    margin-left: 50px;
+nav ul li a {
+  text-decoration: none;
+  color: #9896f1;
+  font-size: 20px;
+}
+nav ul li a:hover {
+  color: #7c73e6;
 }
 
-.col-1-1 h2{
-    color: #222831;
-    font-size: 60px;
+.row-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.col-1-1 h3{
-    font-size: 30px;
-    color: #393e46;
+.col-1-1 {
+  flex-basis: 40%;
+  position: relative;
+  margin-left: 50px;
 }
 
-.col-1-1 h4{
-    margin: 40px 0;
-    font-size: 30px;
+.col-1-1 h2 {
+  color: #222831;
+  font-size: 60px;
 }
 
-.btn{
-    width: 150px;
-    height: 50px;
-    border: 0;
-    padding: 12px 10px;
-    outline: none;
-    color: #fd5959;
-    font-weight: bold;
-    background:linear-gradient(to left,#35bcbf,#fcff82);
-    border-radius: 20px;
-    margin-right: 90px;
-    cursor: pointer;
-    transition: 0.5s;
+.col-1-1 h3 {
+  font-size: 30px;
+  color: #393e46;
 }
 
-.btn-img{
-    width: 30px;
-    display: none;
+.col-1-1 h4 {
+  margin: 40px 0;
+  font-size: 30px;
 }
 
-.btn:hover .btn-img{
-    display: block;
+.btn {
+  width: 150px;
+  height: 50px;
+  border: 0;
+  padding: 12px 10px;
+  outline: none;
+  color: #fd5959;
+  font-weight: bold;
+  background: linear-gradient(to left, #35bcbf, #fcff82);
+  border-radius: 20px;
+  margin-right: 90px;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
-.btn:hover{
-    width: 160px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.btn-img {
+  width: 30px;
+  display: none;
 }
 
-.col-1-1::after{
-    content: '';
-    width: 10px;
-    height: 57%;
-    background:linear-gradient(#35bcbf,#adf7d1);
-    position: absolute;
-    left: -40px;
-    top: 8px;
+.btn:hover .btn-img {
+  display: block;
 }
 
-.col-1-2{
-    position: relative;
-    flex-basis: 60%;
-    display: flex;
-    align-items: center;
-
+.btn:hover {
+  width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.col-1-2 .ajanda-ön-kapak{
-    width: 90%;
+.col-1-1::after {
+  content: "";
+  width: 10px;
+  height: 57%;
+  background: linear-gradient(#35bcbf, #adf7d1);
+  position: absolute;
+  left: -40px;
+  top: 8px;
 }
 
-.social-links{
-    justify-content: center;
-    margin-left: 40%;
+.col-1-2 {
+  position: relative;
+  flex-basis: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.col-1-2 .ajanda-ön-kapak {
+  width: 90%;
+}
+
+.social-links {
+  justify-content: center;
+  margin-left: 40%;
 }
 
 .social-links ul {
-    position: relative;
-    display: flex;
-    gap: 90px;
+  position: relative;
+  display: flex;
+  gap: 90px;
 }
 
-.social-links ul li{
-    position: relative;
-    list-style: none;
-    width: 60px;
-    height: 60px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: wheat;
-    cursor: pointer;
+.social-links ul li {
+  position: relative;
+  list-style: none;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: wheat;
+  cursor: pointer;
 }
 
-.social-links ul li .fa-brands{
-    font-size: 60px;
-    -webkit-text-stroke: 1px var(--clr);
-    color: transparent;
+.social-links ul li .fa-brands {
+  font-size: 60px;
+  -webkit-text-stroke: 1px var(--clr);
+  color: transparent;
 }
 
-.social-links ul li::before{
-    content: '';
+.social-links ul li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 0;
+  overflow: hidden;
+  border-bottom: 1px solid var(--clr);
+  transition: 0.5s ease-in-out;
+  font-family: fontAwesome;
+  text-align: center;
+  line-height: 60px;
+  font-size: 60px;
+  color: var(--clr);
+}
+.social-links ul li:hover::before {
+  height: 100%;
+}
+.social-links ul li:nth-child(1)::before {
+  content: "\f099";
+}
+
+.social-links ul li:nth-child(2)::before {
+  content: "\f16d";
+}
+
+.social-links ul li:nth-child(3)::before {
+  content: "\f232";
+}
+
+@media only screen and (max-width: 700px) {
+  nav ul {
+    width: 100%;
+    background: linear-gradient(#35bcbf, #adf7d1);
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 60px;
-    height: 0;
+    top: 75px;
+    right: 0;
+    z-index: 2;
+  }
+
+  nav ul li {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  nav ul li a {
+    color: #9896f1;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+  .row-1 {
+    flex-direction: column-reverse;
+    margin: 50px 0;
+  }
+  .col-1-2 {
+    flex-basis: 50%;
+    margin-bottom: 50px;
+  }
+  .col-1-2 .ajanda-ön-kapak {
+    width: 77%;
+  }
+
+  .col-1-1 {
+    flex-basis: 100%;
+  }
+  .col-1-1 h2 {
+    font-size: 35px;
+  }
+  .col-1-1 h3 {
+    font-size: 35px;
+  }
+  #menuList {
     overflow: hidden;
-    border-bottom: 1px solid var(--clr);
-    transition: 0.5s ease-in-out;
-    font-family: fontAwesome;
-    text-align: center;
-    line-height: 60px;
-    font-size: 60px;
-    color: var(--clr);
-}
-.social-links ul li:hover::before{
-    height: 100%;
-}
-.social-links ul li:nth-child(1)::before{
-    content: '\f099';
-}
-
-.social-links ul li:nth-child(2)::before{
-    content: '\f16d';
-}
-
-.social-links ul li:nth-child(3)::before{
-    content: '\f232';
-}
-
-
-@media only screen and (max-width:700px){
-    nav ul{
-        width: 100%;
-        background: linear-gradient(#35bcbf,#adf7d1);
-        position: absolute;
-        top: 75px;
-        right: 0;
-        z-index: 2;
-    }
-
-    nav ul li{
-        display: block;
-        margin-top: 10px;
-        margin-bottom: 10px;
-    }
-
-    nav ul li a {
-        color: #9896f1;
-    }
-
-    .menu-icon{
-        display: block;
-
-    }
-    .row-1{
-        flex-direction: column-reverse;
-        margin: 50px 0;
-    }
-    .col-1-2{
-        flex-basis: 50%;
-        margin-bottom: 50px;
-    }
-    .col-1-2 .ajanda-ön-kapak{
-        width: 77%;
-    }
-
-    .col-1-1{
-        flex-basis: 100%;
-    }
-    .col-1-1 h2{
-        font-size: 35px;
-    }
-    .col-1-1 h3{
-        font-size: 35px;
-    }
-    #menuList{
-        overflow: hidden;
-        transition: 0.5s;
-    }
-    .social-links{
-        justify-content: center;
-        margin-left: 0.7em;
-    }
+    transition: 0.5s;
+  }
+  .social-links {
+    justify-content: center;
+    margin-left: 0.7em;
+  }
 }
